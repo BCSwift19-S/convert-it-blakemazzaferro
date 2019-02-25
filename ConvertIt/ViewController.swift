@@ -76,6 +76,7 @@ class ViewController: UIViewController {
     
     //MARK:- Actions
     @IBAction func userInputChanged(_ sender: UITextField) {
+        signSegment.isHidden = false
         resultsLabel.text = ""
         if userInput.text?.first == "-"{
             signSegment.selectedSegmentIndex = 1
